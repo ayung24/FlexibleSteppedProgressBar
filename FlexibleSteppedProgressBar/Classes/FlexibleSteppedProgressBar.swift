@@ -404,8 +404,8 @@ import CoreGraphics
                 
             }
         }
-
-        self.renderTextIndexes()
+        self.renderBottomTextIndexes()
+        //self.renderTextIndexes()
         
         let progressCenterPoints = Array<CGPoint>(centerPoints[0..<(completedTillIndex+1)])
         
