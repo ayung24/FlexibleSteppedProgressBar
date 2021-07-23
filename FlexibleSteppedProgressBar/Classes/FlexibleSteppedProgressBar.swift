@@ -44,7 +44,7 @@ import CoreGraphics
             }
         }
         didSet {
-            animationRendering = true
+            //animationRendering = true
             self.setNeedsDisplay()
         }
     }
@@ -747,6 +747,8 @@ import CoreGraphics
             let touchPoint = gestureRecognizer.location(in: self)
             
             var smallestDistance = CGFloat(Float.infinity)
+            
+            var selectedIndex = 0
             
             for (index, point) in self.centerPoints.enumerated() {
                 let distance = touchPoint.distanceWith(point)
